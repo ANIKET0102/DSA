@@ -78,3 +78,51 @@
 //     f(n,n);
 //     return 0;
 // }
+
+
+3.Sum in Recursion
+
+//There are 2 ways for sum in recursion 
+// 1. Parameter Way     2. Funcitonal Way
+
+// 1. Parameter Way
+
+// #include<iostream>
+// using namespace std;
+
+
+// void f(int i, int sum){
+//     if(i < 1){
+//         cout<< sum <<endl;
+//         return;
+//     }
+//     f(i - 1, sum + i);
+// }
+
+// main(){
+//     int n;
+//     cin >> n;
+//     f(n, 0);
+
+//     return 0;
+// }
+
+
+// 2. Functional Way
+
+// #include<iostream>
+// using namespace std;
+
+// int f(int n){
+//     if(n == 0) return 0;
+    
+//     return n + f(n-1);
+// }
+
+// int main(){
+//     int n = 5;
+//     // cin>>n;
+//     cout << f(n);
+//     return 0;
+// }
+
